@@ -31,21 +31,31 @@
         <form action="#" method="post"
             enctype="multipart/form-data">
             <fieldset>
-                <legend>Поле авторизации</legend>
+                <legend>Поле регистрации</legend>
+                <p>
+                    <label>Введите Имя: <input type="text" required="required" minlength="3" maxlength="15"></label>
+                </p>
+                <p>
+                    <label>Введите Фамилию: <input type="text" required="required" minlength="3" maxlength="15"></label>
+                </p>
                 <p>
                     <label>Введите e-mail пользователя:<input type="email" required="required"></label>
                 </p>
                 <p>
-                    <label>Пароль:<input type="password" required="required" placeholder="Введите пароль"></label>
+                    <label>Пароль:<input type="password" required="required" minlength="6" placeholder="Введите пароль"></label>
                 </p>
                 <p>
-                    <label>Пароль:<input type="password" required="required" placeholder="Подтвердите пароль"></label>
+                    <label>Пароль:<input type="password" required="required" minlength="6" placeholder="Подтвердите пароль"></label>
                 </p>
-
+                <p>
+                    <input type="file" multiple accept="image/jpeg">Загрузите аватар в jpeg</label>
+                </p>
+                
                 <p>
                     <label><input name="answer1" type="checkbox"><a href="#agreement.pdf">Согласится с пользовательсим 
                         соглашением и политикой конфиденциальности</a></label>
                 </p>
+                
                 <p>
                     <input type="submit" value="Зарегистрироваться">
 
